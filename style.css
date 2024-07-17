@@ -22,6 +22,7 @@ body {
   --space-between: space-between;
   --inter: "Inter", sans-serif;
   --white: #ffffff;
+  --orange: #e6533c;
 }
 
 .main {
@@ -55,9 +56,14 @@ body {
   text-transform: capitalize;
   padding: 8px 20px;
   color: var(--white);
+  border-radius: 46px;
 }
 
 .menu ul li:nth-child(1) {
-  background-color: #e6533c;
+  background-color: var(--orange);
   border-radius: 46px;
+}
+
+.menu nav ul li:hover a {
+  background-color: var(--orange);
 }
