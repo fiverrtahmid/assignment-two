@@ -67,6 +67,7 @@ shared style
   font-family: var(--inter);
   font-size: 14px;
   letter-spacing: .3px;
+  line-height: 24px;
   text-align: center;
   color: var(--gray);
   margin-top: 10px;
@@ -256,6 +257,39 @@ shared style
   top: 55%;
   transform: translate(-50%, -50%);
 }
+
+/* 
+===============================
+change your habit style starts here 
+==============================
+*/
+.habits {
+  display: flex;
+  text-align: center;
+  margin-top: 30px;
+}
+.habit-item {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.habit-item h3 {
+  color: var(--white);
+  text-transform: capitalize;
+  font-family: var(--inter);
+}
+.habit-item p {
+  color: var(--gray);
+  font-family: var(--inter);
+}
+
+.habit-item img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+
 @media all and (max-width: 992px) {
   .main {
     padding: 15px;
