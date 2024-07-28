@@ -37,6 +37,41 @@ body {
   --gray: rgba(255, 255, 255, 0.5);
 }
 
+/* 
+==================
+shared style 
+===============
+*/
+.t-center {
+  text-align: center;
+}
+
+.c-white {
+  color: var(--white);
+}
+.fs-48 {
+  font-size: 48px;
+}
+.fw-900 {
+  font-weight: 900;
+}
+.pt-58 {
+  padding-top: 58px;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+.section-subtitle {
+  font-weight: 400;
+  font-family: var(--inter);
+  font-size: 14px;
+  letter-spacing: .3px;
+  text-align: center;
+  color: var(--gray);
+  margin-top: 10px;
+}
+
 .main {
   max-width: 1440px;
   margin: 0 auto;
