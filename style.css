@@ -26,7 +26,9 @@ body {
   background-color: rgba(0, 0, 0, 1);
   margin: 0 auto;
 }
-
+h2 {
+  font-family: var(--inter);
+}
 :root {
   --flex: flex;
   --space-between: space-between;
@@ -45,7 +47,9 @@ shared style
 .t-center {
   text-align: center;
 }
-
+.t-left {
+  text-align: left;
+}
 .c-white {
   color: var(--white);
 }
@@ -61,14 +65,16 @@ shared style
 .capitalize {
   text-transform: capitalize;
 }
-
+.section {
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
 .section-subtitle {
   font-weight: 400;
   font-family: var(--inter);
   font-size: 14px;
   letter-spacing: .3px;
   line-height: 24px;
-  text-align: center;
   color: var(--gray);
   margin-top: 10px;
 }
@@ -275,6 +281,7 @@ change your habit style starts here
   gap: 10px;
 }
 .habit-item h3 {
+  margin-top: 20px;
   color: var(--white);
   text-transform: capitalize;
   font-family: var(--inter);
@@ -290,6 +297,30 @@ change your habit style starts here
   border-radius: 100%;
 }
 
+/* =======================
+extra-mile style starts here
+===========================
+*/
+
+.extra-mile {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  border-radius: 16px;
+  margin-bottom: 100px;
+}
+.extra-mile-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.extra-mile-img img {
+  width: 366px;
+  height: 312px;
+  object-fit: cover;
+}
 @media all and (max-width: 992px) {
   .main {
     padding: 15px;
