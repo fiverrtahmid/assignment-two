@@ -468,7 +468,19 @@ extra-mile style starts here
   left: 0;
   background: rgba(0, 71, 255, 0.3);
  }
+/*
+========================
+bmi calculator style starts here
+==========================
+*/
 
+.bmi-calculator {
+  padding: 100px 10px;
+}
+.bmi-inner {
+  max-width: 700px;
+  margin:  0 auto;
+}
 @media all and (max-width: 992px) {
   .main {
     padding: 15px;
