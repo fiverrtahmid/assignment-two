@@ -152,6 +152,8 @@ shared style
   display: var(--flex);
   justify-content: var(--space-between);
   align-items: center;
+  max-width: 1060px;
+  margin: 0 auto;
 }
 .hero-item {
   width: 50%;
@@ -308,7 +310,8 @@ extra-mile style starts here
   justify-content: space-between;
   background-color: #222;
   border-radius: 16px;
-  margin-bottom: 100px;
+  margin: 100px auto;
+  max-width: 1060px;
 }
 .extra-mile-text {
   display: flex;
@@ -480,6 +483,27 @@ bmi calculator style starts here
 .bmi-inner {
   max-width: 700px;
   margin:  0 auto;
+}
+.bmi-chart-form {
+  background: rgba(34, 34, 34, 1);
+padding: 100px 10px;
+}
+.chart h3 {
+  font-family: var(--inter);
+  font-size: 28px;
+  font-weight: 900;
+}
+.chart table {
+  margin-top: 30px;
+  font-family: var(--inter);
+  padding: 10px;
+  text-align: left;
+  }
+.chart table, th, td {
+  color: white;
+  padding: 10px;
+  border: 1px solid gray;
+  border-collapse: collapse;
 }
 @media all and (max-width: 992px) {
   .main {
