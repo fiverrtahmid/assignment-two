@@ -25,6 +25,7 @@ li {
 body {
   background-color: rgba(0, 0, 0, 1);
   margin: 0 auto;
+  font-family: var(--inter);
 }
 h2 {
   font-family: var(--inter);
@@ -68,6 +69,10 @@ shared style
 .section {
   padding-top: 58px;
   padding-bottom: 58px;
+}
+.section-title {
+  font-size: 58px;
+  font-family: var(--inter);
 }
 .section-subtitle {
   font-weight: 400;
@@ -564,6 +569,92 @@ select {
   font-size: 20px;
   margin-top: 20px;
 }
+.our-team {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.team {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 20px;
+  background-color: #383838;
+  padding: 20px;
+  border-radius: 12px;
+}
+.team .member img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.team .member {
+  position: relative;
+}
+
+.team .member .member-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.team .member .member-info h4,
+p {
+  color: var(--white);
+  font-family: var(--inter);
+  text-transform: capitalize;
+}
+.team .member .member-info p {
+  color: var(--gray);
+}
+
+/* 
+======================
+footer style starts here 
+=========================*/
+.footer {
+  background-color: #191919;
+  padding: 100px 10px 0 10px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.foo-item:nth-child(1) {
+  width: 50%;
+}
+.foo-item img {
+  width: 200px;
+}
+.foo-item p {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.8;
+  color: var(--gray);
+  line-height: 24px;
+}
+.foo-item ul li a {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.8;
+  color: var(--gray);
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.copyright-area {
+  margin-top: 40px;
+  border-top: 1.5px solid var(--gray);
+  padding: 30px 0;
+}
+.copyright-area p {
+  color: var(--gray);
+  font-weight: 300;
+}
+
 @media all and (max-width: 992px) {
   .main {
     padding: 15px;
